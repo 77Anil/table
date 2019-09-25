@@ -10,7 +10,6 @@ var Request = require("request");
         }, (error, response, body) => {
             if(error) {
             res.json({data:error});
-
             }
             //console.log("called",JSON.parse(body));
             res.json({data:JSON.parse(body).organizations});
