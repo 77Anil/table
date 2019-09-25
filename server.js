@@ -9,7 +9,6 @@ var Request = require("request");
 
         }, (error, response, body) => {
             if(error) {
-           // console.log("test",error);
             res.json({data:error});
 
             }
